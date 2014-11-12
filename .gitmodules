@@ -1,0 +1,3 @@
+[submodule "famous-bkimagesurface"]
+	path = famous-bkimagesurface
+	url = https://github.com/IjzerenHein/famous-bkimagesurface
