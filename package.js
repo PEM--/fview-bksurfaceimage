@@ -1,7 +1,7 @@
 Package.describe({
   name: 'pierreeric:fview-bksurfaceimage',
   summary: 'Adaptive image plugin for Meteor\'s famous-views.',
-  version: '0.1.0',
+  version: '0.1.2',
   git: 'https://github.com/PEM--/fview-bksurfaceimage'
 });
 

@@ -1,0 +1,35 @@
+head
+  title fview-bksurfaceimage demo
+  meta(charset='utf-8')
+  meta(name='viewport', content='width=device-width, maximum-scale=1, user-scalable=no')
+  meta(name='apple-mobile-web-app-capable', content='yes')
+  meta(name='apple-mobile-web-app-status-bar-style', content='black')
+  meta(name='apple-mobile-web-app-capable', content='yes')
+  meta(name='mobile-web-app-capable', content='yes')
+body
+  +famousContext id='mainCtx'
+    +picts
+  
+template(name='picts')
+  +Scrollview id='scrollview'
+    +FlexGrid itemSize='[300,140]'
+      +famousEach picts
+        // Encapsulate surfaces as a group
+        +StateModifier
+          +StateModifier align='[.5,0]' origin='[.5,0]' size='[undefined, 40]'
+            +Surface class='label'
+              p= desc
+              pre= code
+          +StateModifier align='[.5,1]' origin='[.5,1]' size='[undefined, 100]'
+            +Surface class='red-border'
+              | 
+            // Used for the rotating examples
+            +StateModifier align='[.5,1]' origin='[.5,1]'
+              +BkImageSurface(
+                backface=backface
+                sizemode=sizemode
+                positionmode=positionmode
+                repeatmode=repeatmode
+                content='http://lorempixel.com/200/200/'
+              )
+                | 

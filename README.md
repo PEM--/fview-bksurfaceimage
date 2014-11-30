@@ -5,3 +5,7 @@ This plugin brings [famous-bksurfaceimage](https://github.com/IjzerenHein/famous
 
 As the author of the component, [Hein Rutjes](https://github.com/IjzerenHein) says it:
 > BkImageSurface adds support for sizing strategies such as AspectFit and AspectFill for displaying images with [famo.us](http://famo.us). It uses a `div` with a background-image rather than a `img` tag.
+
+```bash
+meteor add pierreeric:fview-bksurfaceimage
+```
