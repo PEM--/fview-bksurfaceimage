@@ -37,9 +37,10 @@ meteor add coffeescript
 
 And then in `client` directory, call your FlexGrid filling it with either a static set of surfaces or a reactive one extracted from your MongoDB:
 ```jade
-+BkImageSurface attr1=val1 attr2=val2
++BkImageSurface sizemode='ASPECTFILL' positionmode='BOTTOM' content='/myhighresimage.jpg'
 ```
 With the following attributes and the default values:
+* `content`: The URL of your background image.
 * `backface`: false by default, add back-face visible once set to true.
 * `sizemode`:
   * `AUTO`: Keeps the original image dimensions.
@@ -56,7 +57,7 @@ With the following attributes and the default values:
   * `TOPRIGHT`: Aligns the image in the top-right corner of the div.
   * `BOTTOMLEFT`: Aligns the image in the bottom-left corner of the div.
   * `BOTTOMRIGHT`: Aligns the image in the bottom-right corner of the div.
-* `repeatnmode`:
+* `repeatmode`:
   * `NONE`: Default, no image-repeat.
   * `HORIZONTAL`: Image is repeated horizontally.
   * `VERTICAL`: Image is repeated vertically.
